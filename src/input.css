@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Afacad:wght@300;400;500;600;700&display=swap");
+
+@import "tailwindcss";
+
+/* :root {
+  --font-gloock: "Gloock", serif;
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+  --font-alexandria: "Alexandria", sans-serif;
+  --font-afacad: "Afacad", sans-serif;
+  --color-gray: #949494;
+  --color-secondary: #d1d1d1;
+  --color-primary: #888888;
+  --color-dark: #111111;
+} */
+
+@theme {
+  --font-gloock: "Gloock", serif;
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+  --font-alexandria: "Alexandria", sans-serif;
+  --font-afacad: "Afacad", sans-serif;
+  --color-gray: #949494;
+  --color-secondary: #d1d1d1;
+  --color-primary: #888888;
+  --color-Tertiary: #e7e7e7;
+  --color-muted: #d1d1d1;
+  --color-second: #F6F6F6;
+  --color-dark: #111111;
+}
+
+@layer components {
+  .btn-primary {
+    @apply text-dark font-jakarta flex items-center gap-4 text-sm font-semibold transition-all active:text-gray-300 ps-5 sm:ps-0;
+  }
+  .iconbtn {
+    @apply transition-transform duration-500 ease-in-out;
+  }
+  .iconbtn-rotate {
+    @apply rotate-45;
+  }
+
+  .title {
+    @apply font-gloock text-dark text-2xl font-normal md:text-5xl;
+  }
+  .search-box-show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .search-box-hide {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* Untuk Internet Explorer dan Edge */
+    scrollbar-width: none; /* Untuk Firefox */
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Untuk Chrome, Safari, dan Opera */
+  }
+}
+
+#newSlideContainer {
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0 24px;
+}
+
+#newSlideContainer > div {
+  scroll-snap-align: start;
+}
+
+/* Transisi halus untuk rotasi gambar */
+nav ul li img {
+  transition: transform 0.3s ease;
+}
+
+/* Kelas yang mengatur rotasi ke atas (180 derajat) */
+.rotate-up {
+  transform: rotate(-180deg);
+}
+
+.move-back {
+  transform: translateX(-200px) rotate(-0deg);
+}
+
+#logo-img {
+  transition: filter 0.3s ease;
+}
+.logo-black {
+  filter: brightness(0) saturate(100%);
+}
+/* Jika kamu ingin mengubah background header menjadi hitam saat muncul kembali */
+.header-black {
+  background-color: black;
+  transition: background-color 0.3s ease;
+}
+
+/* class yang mengubah ikon jadi hitam */
+.icon-black {
+  filter: brightness(0) saturate(100%);
+}
+
+.nav-icon {
+  transition: filter 0.3s ease;
+}
+
+/* tombol menu humberger */
+.burger-line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px; /* 2px */
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+  transform-origin: center;
+}
+/* Posisi tiap garis */
+#mobile-menu-button span:nth-child(1) { top: 4px; }
+#mobile-menu-button span:nth-child(2) { top: 12px; }
+#mobile-menu-button span:nth-child(3) { top: 20px; }
+
+/* Hamburger-to-X saat tombol open */
+#mobile-menu-button.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+#mobile-menu-button.open span:nth-child(2) {
+  opacity: 0;
+}
+#mobile-menu-button.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Saat tombol memiliki class after-hero, ubah warna garis menjadi hitam */
+#mobile-menu-button.after-hero .burger-line {
+  background-color: black !important;
+}burger-line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+  transform-origin: center;
+}
+/* Posisi tiap garis */
+#mobile-menu-button span:nth-child(1) { top: 4px; }
+#mobile-menu-button span:nth-child(2) { top: 12px; }
+#mobile-menu-button span:nth-child(3) { top: 20px; }
+
+/* Hamburger-to-X saat tombol open */
+#mobile-menu-button.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+#mobile-menu-button.open span:nth-child(2) {
+  opacity: 0;
+}
+#mobile-menu-button.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Ubah warna hamburger menjadi hitam saat sudah melewati hero */
+#mobile-menu-button.after-hero .burger-line {
+  background-color: black !important;
+}
+
+
+ /* Animasi slideDown untuk dropdown menu*/
+ @keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-slideDown {
+  animation: slideDown 0.3s ease-out;
+}
+/* Animasi rotasi untuk ikon dropdown */
+.dropdown-toggle {
+  transition: transform 0.3s ease;
+}
+.dropdown-toggle.open {
+  transform: rotate(180deg);
+}
+
+ /* Animasi slideDown untuk dropdown herro */
+ @keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-slideDown {
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-slideDown {
+  animation: slideDown 0.3s ease-out;
+}
+
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*=== animasi contact ===*/
+.popup-container {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px); 
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Saat popup aktif */
+.popup-container.open {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* Popup content */
+.popup-content {
+  width: 24rem; /* setara dengan w-96 */
+  transform: scale(0.9);
+  border-radius: 0.5rem; /* setara dengan rounded-lg */
+  background: white;
+  padding: 1.5rem; /* setara dengan p-6 */
+  opacity: 0;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* setara dengan shadow-xl */
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Saat popup aktif, konten tampil penuh */
+.popup-container.open .popup-content {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* scroll header logo */
+/* Contoh definisi animasi fade */
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-out {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+ /* animasi search hero */
+.shimmer-effect {
+  background: linear-gradient(120deg, #888888 30%, #a3d8ff 50%, #6fc3ff 70%);
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 1.5s ease-out;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* mobile menu */
+#mobile-menu-button.open {
+  /* background-color: #ccc; */
+}
+
+/* Styling untuk mobile menu */
+#mobile-menu {
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+
+.translate-x-full {
+  transform: translateX(100%);
+}
+
+/* Kelas untuk menampilkan menu (di layar) */
+.translate-x-0 {
+  transform: translateX(0);
+}
+
+/* Kelas untuk menyembunyikan menu secara transparan */
+.opacity-0 {
+  opacity: 0;
+}
+
+/* Kelas untuk menampilkan menu dengan opacity penuh */
+.opacity-100 {
+  opacity: 1;
+}
+
+/* pop up contact */
+#popup {
+  /* Properti yang sudah ada */
+  position: fixed;
+  /* properti lainnya */
+  z-index: 9999; /* Pastikan nilainya lebih tinggi dari gambar */
+}
+
+
+

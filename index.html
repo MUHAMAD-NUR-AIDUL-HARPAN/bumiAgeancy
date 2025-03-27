@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bumi agency</title>
+    <link rel="shortcut icon" href="./img/Vector (9).svg" type="image/svg+img" />
+    <!-- <link href="src/output.css" rel="stylesheet" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="src/style.css" /> -->
+    <link rel="stylesheet" href="src/input.css" />
+
+    <!-- swipper -->
+    <!-- Swiper CSS -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+    <!-- swipper -->
+    <!-- Swiper CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+
+    <style>
+      .swiper-wrapper {
+          display: flex;
+          transition-timing-function: linear !important;
+      }
+  </style>
+
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  </head>
+
+  <body">
+    <div
+      class="relative top-0 mx-auto h-dvh w-full overflow-hidden bg-[url('../img/hero1.png')] bg-[length:100%_100%] bg-center bg-no-repeat md:h-[180vh] lg:h-[220vh]">
+      <div class="container mx-auto max-w-[1440px]">
+        <header id="site-header" class="fixed top-0 left-0 z-50 w-full transition-all duration-300">
+          <div class="container mx-auto max-w-[1440px] ps-3 pe-3 sm:pe-5 lg:pe-10">
+            <div class="flex max-w-[1400px] gap-4 py-[20px] sm:gap-7 lg:gap-[70px]">
+              <div id="logo-container">
+                <img id="logo-img" src="../img/Vector (1).svg" alt="Logo" class="nav-icon w-[42px] lg:w-[48px]" />
+              </div>
+
+              <div id="menu-container" class="flex w-full items-center justify-between">
+                <h2 id="site-title" class="nav-icon font-gloock text-xl font-normal text-white sm:text-2xl lg:text-[32px]">Bumi.</h2>
+
+                <!-- Desktop Menu -->
+                <nav id="desktop-menu" class="hidden items-center lg:flex">
+                  <ul class="flex items-center gap-4 text-sm text-white">
+                    <li><img src="../img/Vector 35.svg" alt="" class="nav-icon" /></li>
+                    <li class="font-bold">
+                      <a href="#" class="nav-link hover:text-secondary transition-all">Home</a>
+                    </li>
+                    <li><img src="../img/Vector 35.svg" alt="" class="nav-icon" /></li>
+                    <li><a href="#" class="nav-link hover:text-secondary transition-all">About</a></li>
+                    <li><img src="../img/Vector 31.svg" alt="" class="nav-icon" /></li>
+                    <!-- Dropdown untuk Properties -->
+                    <li class="relative flex gap-4 items-center">
+                      <a href="#properties" class="nav-link hover:text-secondary transition-all">Properties</a>
+                      <img src="../img/Down.svg" alt="Toggle Dropdown" 
+                           class="nav-icon dropdown-toggle cursor-pointer group-hover:text-secondary" 
+                           data-dropdown="properties" />
+                      <ul id="dropdown-properties" class="absolute left-0 top-full mt-2 w-28 bg-white text-primary shadow-md hidden dropdown-menu rounded-lg">
+                        <li class="p-2 hover:bg-blue-400 rounded-lg hover:text-white transition-all"><a href="#prop1">Option 1</a></li>
+                        <li class="p-2 hover:bg-blue-400 rounded-lg hover:text-white transition-all"><a href="#prop1">Option 2</a></li>
+                        <li class="p-2 hover:bg-blue-400 rounded-lg hover:text-white transition-all"><a href="#prop1">Option 3</a></li>
+                       
+                      </ul>
+                    </li>
+                    <li><img src="../img/Vector 31.svg" alt="" class="nav-icon" /></li>
+                    <!-- Dropdown untuk Services -->
+                    <li class="relative flex gap-4 items-center">
+                      <a href="#" class="nav-link hover:text-secondary transition-all">Services</a>
+                      <img src="../img/Down.svg" alt="Toggle Dropdown" 
+                           class="nav-icon dropdown-toggle cursor-pointer" 
+                           data-dropdown="services" />
+                      <ul id="dropdown-services" class="absolute left-0 top-full mt-2 w-28 bg-white text-primary shadow-md hidden dropdown-menu rounded-lg">
+                        <li class="p-2 hover:bg-blue-400 rounded-lg hover:text-white transition-all"><a href="#prop1">Option 1</a></li>
+                        <li class="p-2 hover:bg-blue-400 rounded-lg hover:text-white transition-all"><a href="#prop1">Option 2</a></li>
+                        <li class="p-2 hover:bg-blue-400 rounded-lg hover:text-white transition-all"><a href="#prop1">Option 3</a></li>
+                       
+                      </ul>
+                    </li>
+                    <li><img src="../img/Vector 31.svg" alt="" class="nav-icon" /></li>
+                    <!-- Dropdown untuk Resources -->
+                    <li class="relative flex gap-4 items-center">
+                      <a href="#" class="nav-link hover:text-secondary transition-all">Resources</a>
+                      <img src="../img/Down.svg" alt="Toggle Dropdown" 
+                           class="nav-icon dropdown-toggle cursor-pointer" 
+                           data-dropdown="resources" />
+                      <ul id="dropdown-resources" class="absolute left-0 top-full mt-2 w-28 bg-white text-primary shadow-md hidden dropdown-menu rounded-lg">
+                        <li class="p-2 hover:bg-blue-400 rounded-lg hover:text-white transition-all"><a href="#prop1">Option 1</a></li>
+                        <li class="p-2 hover:bg-blue-400 rounded-lg hover:text-white transition-all"><a href="#prop1">Option 2</a></li>
+                        <li class="p-2 hover:bg-blue-400 rounded-lg hover:text-white transition-all"><a href="#prop1">Option 3</a></li>
+                       
+                      </ul>
+                    </li>
+                    <li><img src="../img/Vector 31.svg" alt="" class="nav-icon" /></li>
+                    <li><a href="#contact" class="nav-link hover:text-secondary transition-all">Contact Us</a></li>
+                    <li><img src="../img/Vector 31.svg" alt="" class="nav-icon" /></li>
+                  </ul>
+                </nav>                
+              </div>
+              <!-- Mobile Menu Button & Dropdown -->
+              <div class="relative lg:hidden">
+                <button id="mobile-menu-button" class="fixed top-4 right-4 z-60 w-8 h-8 focus:outline-none">
+                  <span class="burger-line"></span>
+                  <span class="burger-line"></span>
+                  <span class="burger-line"></span>
+                </button>
+                <!-- Mobile Dropdown Menu -->
+
+                <div
+                  id="mobile-menu"
+                  class="fixed inset-0 bg-blue-300 text-black transform translate-x-full opacity-0 transition-transform duration-300 ease-in-out z-50">
+                  <ul class="sm:h-full flex flex-col justify-center sm:items-center space-y-6 mt-16 ps-5">
+                    <li><a href="#" class="text-2xl hover:text-white">Home</a></li>
+                    <li><a href="#" class="text-2xl hover:text-white">About</a></li>
+                    <li><a href="#" class="text-2xl hover:text-white">Properties</a></li>
+                    <li><a href="#" class="text-2xl hover:text-white">Services</a></li>
+                    <li><a href="#" class="text-2xl hover:text-white">Resources</a></li>
+                    <li><a href="#" class="text-2xl hover:text-white">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </header>
+
+        <!-- herro -->
+        <section id="intro" class="relative top-26 md:top-[200px] container mx-auto max-w-[1440px] px-2">
+          <div class="flex flex-col text-white sm:ml-[70px] md:ml-[73px] lg:ml-[120px]">
+            <div class="md:w-[419px] lg:w-[825px]">
+              <h1
+                id="title"
+                class="typing-container font-gloock sm:h-[202px] text-3xl sm:text-5xl md:text-[64px] md:leading-[120%] lg:h-[402px] lg:text-9xl">
+                Find Your Perfect Home Today.
+              </h1>
+            </div>
+
+            <div data-aos="fade-up" class="relative mt-56 hidden w-full grow justify-between lg:flex">
+              <!-- Filter Container -->
+              <div id="categoryContainer" class="flex w-full justify-between">
+                <!-- Category Filter -->
+                <div class="relative flex flex-1 flex-col justify-between border-l-2 border-white px-5">
+                  <p class="font-jakarta text-sm font-light">Category</p>
+                  <div class="flex items-center justify-between py-4">
+                    <p class="font-jakarta text-2xl font-semibold" id="selected-category">Rent/Buy</p>
+                    <img src="../img/Down.svg" alt="Toggle Category" 
+                         class="w-3.5 cursor-pointer dropdown-toggle" 
+                         data-dropdown="category" />
+                  </div>
+                  <!-- Dropdown Menu for Category -->
+                  <ul id="dropdown-category" class="absolute left-0 top-full mt-2 w-full bg-white text-primary shadow-md hidden dropdown-menu rounded-sm">
+                    <li class="p-2 hover:bg-blue-400 hover:text-white rounded-sm transition-all"><a href="#">Rent</a></li>
+                    <li class="p-2 hover:bg-blue-400 hover:text-white rounded-sm transition-all"><a href="#">Buy</a></li>
+                    <li class="p-2 hover:bg-blue-400 hover:text-white rounded-sm transition-all"><a href="#">Rent/Buy</a></li>
+                  </ul>
+                </div>
+              
+                <!-- Type Filter -->
+                <div class="relative flex flex-1 flex-col justify-between border-l-2 border-white px-5">
+                  <p class="font-jakarta text-sm font-light">Type</p>
+                  <div class="flex items-center justify-between py-4">
+                    <p class="font-jakarta text-2xl font-semibold" id="selected-type">Residential</p>
+                    <img src="../img/Down.svg" alt="Toggle Type" 
+                         class="w-3.5 cursor-pointer dropdown-toggle" 
+                         data-dropdown="type" />
+                  </div>
+                  <!-- Dropdown Menu for Type -->
+                  <ul id="dropdown-type" class="absolute left-0 top-full mt-2 w-full bg-white text-primary shadow-md hidden dropdown-menu rounded-sm">
+                    <li class="p-2 hover:bg-blue-400 hover:text-white rounded-sm transition-all"><a href="#">Rent</a></li>
+                    <li class="p-2 hover:bg-blue-400 hover:text-white rounded-sm transition-all"><a href="#">Buy</a></li>
+                    <li class="p-2 hover:bg-blue-400 hover:text-white rounded-sm transition-all"><a href="#">Rent/Buy</a></li>
+                  </ul>
+                  </ul>
+                </div>
+              
+                <!-- City Filter -->
+                <div class="relative flex flex-1 flex-col justify-between border-l-2 border-white px-5">
+                  <p class="font-jakarta text-sm font-light">City</p>
+                  <div class="flex items-center justify-between py-4">
+                    <p class="font-jakarta text-2xl font-semibold" id="selected-city">Alabama</p>
+                    <img src="../img/Down.svg" alt="Toggle City" 
+                         class="w-3.5 cursor-pointer dropdown-toggle" 
+                         data-dropdown="city" />
+                  </div>
+                  <!-- Dropdown Menu for City -->
+                  <ul id="dropdown-city" class="absolute left-0 top-full mt-2 w-full bg-white text-primary shadow-md hidden dropdown-menu rounded-sm">
+                    <li class="p-2 hover:bg-blue-400 hover:text-white rounded-sm transition-all"><a href="#">Rent</a></li>
+                    <li class="p-2 hover:bg-blue-400 hover:text-white rounded-sm transition-all"><a href="#">Buy</a></li>
+                    <li class="p-2 hover:bg-blue-400 hover:text-white rounded-sm transition-all"><a href="#">Rent/Buy</a></li>
+                  </ul>
+                  </ul>
+                </div>
+              
+                <!-- Price Filter -->
+                <div class="relative flex flex-1 flex-col justify-between border-l-2 border-white px-5">
+                  <p class="font-jakarta text-sm font-light">Price</p>
+                  <div class="flex items-center justify-between py-4">
+                    <p class="font-jakarta text-2xl font-semibold" id="selected-price">$600k - $1000k</p>
+                    <img src="../img/Down.svg" alt="Toggle Price" 
+                         class="w-3.5 cursor-pointer dropdown-toggle" 
+                         data-dropdown="price" />
+                  </div>
+                  <!-- Dropdown Menu for Price -->
+                  <ul id="dropdown-price" class="absolute left-0 top-full mt-2 w-full bg-white text-primary shadow-md hidden dropdown-menu rounded-sm">
+                    <li class="p-2 hover:bg-blue-400 hover:text-white rounded-sm transition-all"><a href="#">Rent</a></li>
+                    <li class="p-2 hover:bg-blue-400 hover:text-white rounded-sm transition-all"><a href="#">Buy</a></li>
+                    <li class="p-2 hover:bg-blue-400 hover:text-white rounded-sm transition-all"><a href="#">Rent/Buy</a></li>
+                  </ul>
+                  </ul>
+                </div>
+              </div>
+              
+              
+              
+          
+              <!-- Search Input and Button (optional) -->
+              <input type="text" id="searchInput" class="hidden w-full rounded-md border p-4 focus:outline-none" placeholder="Cari sesuatu..." />
+              <button id="searchButton" class="ml-4 flex items-center rounded-full p-2 hover:scale-95">
+                <img src="../img/search.svg" alt="Search" class="rounded-full bg-white p-4 transition-all duration-300 active:bg-gradient-to-b active:from-gray-200 active:to-gray-500" />
+              </button>
+            </div>
+            
+          </div>
+          <div class="absolute top-44 md:top-64 flex w-full gap-5 md:gap-[48px] pe-4 sm:ps-20 lg:hidden">
+            <input
+              type="text"
+              placeholder="Search Please"
+              class="font-jakarta w-full border-b border-white text-lg font-normal text-white focus:outline-none" />
+            <img src="../img/search.svg" alt="" class="h-12 flex-shrink-0 rounded-full bg-white p-4" />
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- section properties -->
+    <section id="properties" class="container mx-auto max-w-[1440px] px-2 py-24">
+      <div class="flex flex-col md:pe-2 sm:pl-[70px] md:pl-[73px] lg:pl-[120px]">
+        <div class="flex flex-col justify-between xl:gap-24">
+          <div class="flex w-full flex-col justify-between gap-10 md:gap-y-16 xl:flex-row">
+            <div class="flex items-end md:w-[552px] xl:w-1/2">
+              <h2 data-aos="fade-right" class="font-gloock text-dark w-full text-2xl leading-[120%] tracking-[2%] md:text-5xl">
+                Explore our handpicked collection of properties tailored just for you.
+              </h2>
+            </div>
+
+            <div  class="mb-10 flex items-end px-1 md:w-[591px] lg:mb-0 xl:w-1/2">
+              <ul class="flex w-full flex-wrap items-center md:justify-between gap-2">
+                <li data-aos="fade-up" data-aos-delay="0" class="">
+                  <img src="../img/vector.svg" alt="" />
+                </li>
+                <button class="filter-btn text-secondary text-lg font-semibold transition-colors duration-300 lg:text-2xl cursor-pointer hover:text-dark" data-category="All" data-aos="fade-up" data-aos-delay="100">All</button>
+                <li data-aos="fade-up" data-aos-delay="100" class="flex-shrink-0">
+                  <img src="../img/vector.svg" alt="" />
+                </li>
+                <button class="filter-btn text-secondary text-lg font-semibold transition-colors duration-300 lg:text-2xl hover:text-dark cursor-pointer" data-category="Residential" data-aos="fade-up" data-aos-delay="300">Residential</button>
+                <li data-aos="fade-up" data-aos-delay="200" class="flex-shrink-0">
+                  <img src="../img/vector.svg" alt="" />
+                </li>
+                <button class="filter-btn text-secondary text-lg font-semibold transition-colors duration-300 lg:text-2xl hover:text-dark cursor-pointer" data-category="Commercial" data-aos="fade-up" data-aos-delay="500">Commercial</button>
+                <li data-aos="fade-up" data-aos-delay="300" class="flex-shrink-0">
+                  <img src="../img/vector.svg" alt="" />
+                </li>
+                <button class="filter-btn text-secondary text-lg font-semibold transition-colors duration-300 lg:text-2xl hover:text-dark cursor-pointer" data-category="Vacational" data-aos="fade-up" data-aos-delay="700">Vacational</button>
+                <li data-aos="fade-up" data-aos-delay="400" class="flex-shrink-0">
+                  <img src="../img/vector.svg" alt="" />
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+
+          <!-- Grid card -->
+          <div id="gallery"  class="grid grid-cols-1 gap-8 gap-x-5 sm:grid-cols-2 lg:gap-y-[72px] lg:mt-4 -translate-y-5 lg:-translate-y-10">
+            <div data-category="Vacational" class="gallery-item group flex flex-col gap-4">
+              <figure class="relative overflow-hidden lg:rounded-xl group">
+                <!-- Gambar -->
+                <img
+                  src="img/Rectangle 2 (8).png"
+                  alt="Explore"
+                  class="w-full transform transition-transform rounded-lg duration-700 group-hover:scale-110 group-hover:brightness-125 lg:rounded-xl" />
+              
+                <!-- Overlay Gradient -->
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity duration-700 group-hover:opacity-70"></div>
+              
+                <!-- Overlay Text dengan Latar Belakang -->
+                <div
+                  class="absolute inset-0 flex items-center justify-center opacity-0 transition-all duration-700 group-hover:opacity-100 z-20">
+                  <span class="text-2xl font-bold text-white bg-black/50 px-4 py-2 rounded-lg backdrop-blur-md drop-shadow-lg">
+                    Explore
+                  </span>
+                </div>
+              </figure>
+              
+              <div data-aos-duration="1000" class="font-jakarta text-primary flex items-center justify-between">
+                <div class="font-light">
+                  <h3 class="text-dark font-semibold transition-colors duration-700 group-hover:text-blue-500"><a href="">Villa House</a></h3>
+                  <p>Cibuntu, Sukabumi</p>
+                  <p>House</p>
+                </div>
+                <div class="text-right font-light">
+                  <p class="transition-colors duration-700 group-hover:text-blue-500">$ 810K</p>
+                  <p class="transition-colors duration-700 group-hover:text-blue-500">$ 1k / Month</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 1 -->
+            <div data-category="Vacational" class="gallery-item group flex flex-col gap-4">
+              <figure class="relative overflow-hidden lg:rounded-xl">
+                <img
+                  src="../img/Rectangle 2 (9).png"
+                  alt=""
+                  class="w-full transform transition-transform rounded-lg duration-700 group-hover:scale-110 group-hover:brightness-125 lg:rounded-xl" />
+                <!-- Overlay Gradient -->
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity duration-700 group-hover:opacity-50"></div>
+                <!-- Overlay Text -->
+                <div
+                  class="absolute inset-0 flex items-center justify-center opacity-0 transition-all duration-700 group-hover:opacity-100">
+                  <span class="text-2xl font-bold text-white bg-black/50 px-4 py-2 rounded-lg hover:backdrop-blur-sm drop-shadow-lg">
+                    Explore
+                  </span>
+                </div>
+              </figure>
+              <div class="font-jakarta text-primary flex items-center justify-between">
+                <div class="font-light">
+                  <h3 class="text-dark font-semibold transition-colors duration-700 group-hover:text-blue-500"><a href="">Villa House</a></h3>
+                  <p>Cibuntu, Sukabumi</p>
+                  <p>House</p>
+                </div>
+                <div class="text-right font-light">
+                  <p class="transition-colors duration-700 group-hover:text-blue-500">$ 810K</p>
+                  <p class="transition-colors duration-700 group-hover:text-blue-500">$ 1k / Month</p>
+                </div>
+              </div>
+            </div>
+
+            <!--card 2  -->
+            <div data-category="Commercial" class="gallery-item group flex flex-col gap-4">
+              <figure class="relative overflow-hidden lg:rounded-xl">
+                <img
+                  src="../img/Rectangle 2 (10).png"
+                  alt=""
+                  class="w-full transform transition-transform rounded-lg duration-700 group-hover:scale-110 group-hover:brightness-125 lg:rounded-xl" />
+                <!-- Overlay Gradient -->
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity duration-700 group-hover:opacity-50"></div>
+                <!-- Overlay Text -->
+                <div
+                  class="absolute inset-0 flex items-center justify-center opacity-0 transition-all duration-700 group-hover:opacity-100">
+                  <span class="text-2xl font-bold text-white bg-black/50 px-4 py-2 rounded-lg hover:backdrop-blur-sm drop-shadow-lg">
+                    Explore
+                  </span>
+                </div>
+              </figure>
+              <div class="font-jakarta text-primary flex items-center justify-between">
+                <div class="font-light">
+                  <h3 class="text-dark font-semibold transition-colors duration-700 group-hover:text-blue-500"><a href="">Villa House</a></h3>
+                  <p>Cibuntu, Sukabumi</p>
+                  <p>House</p>
+                </div>
+                <div class="text-right font-light">
+                  <p class="transition-colors duration-700 group-hover:text-blue-500">$ 810K</p>
+                  <p class="transition-colors duration-700 group-hover:text-blue-500">$ 1k / Month</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 3 -->
+            <div data-category="Commercial" class="gallery-item group flex flex-col gap-4">
+              <figure class="relative overflow-hidden lg:rounded-xl">
+                <img
+                  src="../img/Rectangle 2 (11).png"
+                  alt=""
+                  class="w-full transform transition-transform rounded-lg duration-700 group-hover:scale-110 group-hover:brightness-125 lg:rounded-xl" />
+                <!-- Overlay Gradient -->
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity duration-700 group-hover:opacity-50"></div>
+                <!-- Overlay Text -->
+                <div
+                  class="absolute inset-0 flex items-center justify-center opacity-0 transition-all duration-700 group-hover:opacity-100">
+                  <span class="text-2xl font-bold text-white bg-black/50 px-4 py-2 rounded-lg hover:backdrop-blur-sm drop-shadow-lg">
+                    Explore
+                  </span>
+                </div>
+              </figure>
+              <div class="font-jakarta text-primary flex items-center justify-between">
+                <div class="font-light">
+                  <h3 class="text-dark font-semibold transition-colors duration-700 group-hover:text-blue-500"><a href="">Villa House</a></h3>
+                  <p>Cibuntu, Sukabumi</p>
+                  <p>House</p>
+                </div>
+                <div class="text-right font-light">
+                  <p class="transition-colors duration-700 group-hover:text-blue-500">$ 810K</p>
+                  <p class="transition-colors duration-700 group-hover:text-blue-500">$ 1k / Month</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 4 -->
+            <div data-category="Residential" class="gallery-item group flex flex-col gap-4">
+              <figure class="relative overflow-hidden lg:rounded-xl">
+                <img
+                  src="../img/Rectangle 2 (13).png"
+                  alt=""
+                  class="w-full transform transition-transform rounded-lg duration-700 group-hover:scale-110 group-hover:brightness-125 lg:rounded-xl" />
+                <!-- Overlay Gradient -->
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity duration-700 group-hover:opacity-50"></div>
+                <!-- Overlay Text -->
+                <div
+                  class="absolute inset-0 flex items-center justify-center opacity-0 transition-all duration-700 group-hover:opacity-100">
+                  <span class="text-2xl font-bold text-white bg-black/50 px-4 py-2 rounded-lg hover:backdrop-blur-sm drop-shadow-lg">
+                    Explore
+                  </span>
+                </div>
+              </figure>
+              <div class="font-jakarta text-primary flex items-center justify-between">
+                <div class="font-light">
+                  <h3 class="text-dark font-semibold transition-colors duration-700 group-hover:text-blue-500"><a href="">Villa House</a></h3>
+                  <p>Cibuntu, Sukabumi</p>
+                  <p>House</p>
+                </div>
+                <div class="text-right font-light">
+                  <p class="transition-colors duration-700 group-hover:text-blue-500">$ 810K</p>
+                  <p class="transition-colors duration-700 group-hover:text-blue-500">$ 1k / Month</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 5 -->
+            <div data-category="Residential" class="gallery-item group flex flex-col gap-4">
+              <figure class="relative overflow-hidden lg:rounded-xl">
+                <img
+                  src="img/Rectangle 2 (15).png"
+                  alt=""
+                  class="w-full transform transition-transform rounded-lg duration-700 group-hover:scale-110 group-hover:brightness-125 lg:rounded-xl" />
+                <!-- Overlay Gradient -->
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity duration-700 group-hover:opacity-50"></div>
+                <!-- Overlay Text -->
+                <div
+                  class="absolute inset-0 flex items-center justify-center opacity-0 transition-all duration-700 group-hover:opacity-100">
+                  <span class="text-2xl font-bold text-white bg-black/50 px-4 py-2 rounded-lg hover:backdrop-blur-sm drop-shadow-lg">
+                    Explore
+                  </span>
+                </div>
+              </figure>
+              <div class="font-jakarta text-primary flex items-center justify-between">
+                <div class="font-light">
+                  <h3 class="text-dark font-semibold transition-colors duration-700 group-hover:text-blue-500"><a href="">Villa House</a></h3>
+                  <p>Cibuntu, Sukabumi</p>
+                  <p>House</p>
+                </div>
+                <div class="text-right font-light">
+                  <p class="transition-colors duration-700 group-hover:text-blue-500">$ 810K</p>
+                  <p class="transition-colors duration-700 group-hover:text-blue-500">$ 1k / Month</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- grid card end -->
+
+          <button class="btn-primary mt-20 lg:mt-0">
+            <span>Learn More</span>
+            <img src="../img/Icons (1).svg" alt="" class="iconbtn transition-transform duration-500 ease-in-out" />
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- section properties end -->
+
+    <!-- section parnert client -->
+    <section class="container mx-auto max-w-[1440px] px-3 py-10 sm:pe-5 md:py-24 lg:pe-10">
+      <div class="flex flex-col-reverse justify-between gap-10 sm:pl-[70px] md:pl-[73px] lg:flex-row lg:pl-[120px]">
+        <div class="font-gloock flex w-full flex-col justify-between gap-y-8 lg:w-1/2">
+          <h1 data-aos="fade-right" class="text-dark text-4xl leading-[120%] font-normal tracking-[2%] md:text-5xl">
+            Your Partner in Every Step of the Journey
+          </h1>
+          <p data-aos="fade-right" class="font-jakarta text-primary text-sm leading-[190%] font-light">
+            We are a trusted property agency connecting you with the best opportunities in the market. With years of experience, we are ready to guide
+            you through every step of buying, selling, or investing in real estate.
+          </p>
+
+          <button class="btn-primary">
+            <span>Learn More</span>
+            <img src="../img/Icons (1).svg" alt="" class="iconbtn transition-transform duration-500 ease-in-out" />
+          </button>
+        </div>
+
+        <div class="mt-6 lg:mt-0 lg:w-1/2">
+          <figure class="">
+            <img src="../img/client.png" alt="" class="w-full" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- section partner -->
+    <section class="container mx-auto max-w-[1440px] px-3 py-10 sm:pe-5 md:py-24 lg:pe-10">
+      <div class="w-full sm:pl-[70px] md:pl-[73px] lg:pl-[120px]">
+        <div class="flex max-w-[1282px] flex-col gap-8 md:gap-24">
+          <h2 data-aos="fade-right" class="title w-full md:w-[525px]">We can’t go this far without great partner</h2>
+
+          <!-- card list -->
+          <div class="relative mt-10 overflow-hidden">
+            <div class="swiper">
+                <div class="swiper-wrapper flex">
+                    <!-- Card 1 -->
+                    <div class="swiper-slide flex h-[157px] w-[307px] items-center justify-center bg-second rounded-lg px-[58px] py-[57px]">
+                        <div class="flex items-center justify-center gap-4">
+                            <figure class="flex-shrink-0">
+                                <img src="../img/parter.svg" alt="" class="w-full h-11" />
+                            </figure>
+                            <p class="w-[128px] text-sm md:text-2xl">Xarse Contractor</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="swiper-slide flex h-[157px] w-[307px] items-center justify-center bg-second rounded-lg px-[58px] py-[57px]">
+                        <div class="flex items-center justify-center gap-4">
+                            <figure class="flex-shrink-0">
+                                <img src="img/Vector (7).svg" alt="" class="w-full h-11" />
+                            </figure>
+                            <p class="w-[128px] text-sm md:text-2xl">Xarse Contractor</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 3 -->
+                    <div class="swiper-slide flex h-[157px] w-[307px] items-center justify-center bg-second rounded-lg px-[58px] py-[57px]">
+                        <div class="flex items-center justify-center gap-4">
+                            <figure class="flex-shrink-0">
+                                <img src="img/Group.svg" alt="" class="w-full h-11" />
+                            </figure>
+                            <p class="w-[128px] text-sm md:text-2xl">Flows Properties</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 4 -->
+                    <div class="swiper-slide flex h-[157px] w-[307px] items-center justify-center bg-second rounded-lg px-[58px] py-[57px]">
+                        <div class="flex items-center justify-center gap-4">
+                            <figure class="flex-shrink-0">
+                                <img src="img/Vector (7).svg" alt="" class="w-full h-11" />
+                            </figure>
+                            <p class="w-[128px] text-sm md:text-2xl">Xarse Contractor</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 1 -->
+                    <div class="swiper-slide flex h-[157px] w-[307px] items-center justify-center bg-second rounded-lg px-[58px] py-[57px]">
+                      <div class="flex items-center justify-center gap-4">
+                          <figure class="flex-shrink-0">
+                              <img src="../img/parter.svg" alt="" class="w-full h-11" />
+                          </figure>
+                          <p class="w-[128px] text-sm md:text-2xl">Xarse Contractor</p>
+                      </div>
+                  </div>
+                  
+                  <!-- Card 2 -->
+                  <div class="swiper-slide flex h-[157px] w-[307px] items-center justify-center bg-second rounded-lg px-[58px] py-[57px]">
+                      <div class="flex items-center justify-center gap-4">
+                          <figure class="flex-shrink-0">
+                              <img src="img/Vector (7).svg" alt="" class="w-full h-11" />
+                          </figure>
+                          <p class="w-[128px] text-sm md:text-2xl">Xarse Contractor</p>
+                      </div>
+                  </div>
+                  
+                  <!-- Card 3 -->
+                  <div class="swiper-slide flex h-[157px] w-[307px] items-center justify-center bg-second rounded-lg px-[58px] py-[57px]">
+                      <div class="flex items-center justify-center gap-4">
+                          <figure class="flex-shrink-0">
+                              <img src="img/Group.svg" alt="" class="w-full h-11" />
+                          </figure>
+                          <p class="w-[128px] text-sm md:text-2xl">Flows Properties</p>
+                      </div>
+                  </div>
+                  
+                  <!-- Card 4 -->
+                  <div class="swiper-slide flex h-[157px] w-[307px] items-center justify-center bg-second rounded-lg px-[58px] py-[57px]">
+                      <div class="flex items-center justify-center gap-4">
+                          <figure class="flex-shrink-0">
+                              <img src="img/Vector (7).svg" alt="" class="w-full h-11" />
+                          </figure>
+                          <p class="w-[128px] text-sm md:text-2xl">Xarse Contractor</p>
+                      </div>
+                  </div>
+
+
+                </div>
+            </div>
+        </div>
+          <!-- button -->
+          <buttonc class="btn-primary">
+            <span class="font-jakarta text-sm font-semibold">Become our partner</span>
+            <img src="../img/Icons (1).svg" alt="" class="iconbtn transition-transform duration-500 ease-in-out" />
+          </buttonc>
+        </div>
+      </div>
+    </section>
+
+    <!-- section our vision -->
+    <section class="container mx-auto max-w-[1440px] px-3 py-10 sm:pe-5 md:py-24 lg:pe-10">
+      <div class="w-full sm:pl-[70px] md:pl-[73px] lg:pl-[120px]">
+        <div class="flex flex-col gap-14 md:gap-24">
+          <h2 data-aos="fade-right" class="title w-full md:w-[601px]">Your Vision, Our Expertise.</h2>
+
+          <!-- list card -->
+
+          <div class="custom-swiper-container">
+            <div class="custom-swiper-wrapper scrollbar-hide flex flex-col md:flex-row w-full overflow-x-auto md:gap-0">
+              <!-- Konten asli -->
+              <!-- Card 1 -->
+              <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="0"
+                   class="custom-swiper-slide flex w-full flex-col gap-8 border border-gray-200 md:min-w-[422px] px-6">
+                <h3 class="font-gloock w-[260px] text-[32px]">Property Management</h3>
+                <p class="font-jakarta text-primary text-sm">
+                  Comprehensive care for your investments, ensuring seamless operations and peace of mind.
+                </p>
+                <button class="view-button group flex items-center justify-between gap-2 p-2">
+                  <span class="view-text transition-colors duration-300">View Details</span>
+                  <img class="arrow-icon transition-all duration-300 ease-in-out group-hover:-translate-x-2" src="../img/Vector (4).svg" alt="" />
+                </button>
+              </div>
+        
+              <!-- Card 2 -->
+              <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150"
+                   class="custom-swiper-slide flex w-full flex-col gap-8 border border-gray-200 px-6 md:w-[422px] md:min-w-[422px]">
+                <h3 class="font-gloock w-[260px] text-[32px]">Real Estate Consultation</h3>
+                <p class="font-jakarta text-primary text-sm">
+                  Expert guidance to help you navigate the complexities of buying, selling, or investing.
+                </p>
+                <button class="view-button group flex items-center justify-between gap-2 p-2">
+                  <span class="view-text transition-colors duration-300">View Details</span>
+                  <img class="arrow-icon transition-all duration-300 ease-in-out group-hover:-translate-x-2" src="../img/Vector (4).svg" alt="" />
+                </button>
+              </div>
+        
+              <!-- Card 3 -->
+              <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300"
+                   class="custom-swiper-slide flex w-full flex-col gap-8 border border-gray-200 px-6 md:w-[422px] md:min-w-[422px]">
+                <h3 class="font-gloock w-[260px] text-[32px]">Invest Opportunities</h3>
+                <p class="font-jakarta text-primary text-sm">
+                  Unlock lucrative real estate opportunities designed to grow your wealth and portfolio.
+                </p>
+                <button class="view-button group flex items-center justify-between gap-2 p-2">
+                  <span class="view-text transition-colors duration-300">View Details</span>
+                  <img class="arrow-icon transition-all duration-300 ease-in-out group-hover:-translate-x-2" src="../img/Vector (4).svg" alt="" />
+                </button>
+              </div>
+        
+              <!-- Card 4 -->
+              <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="450"
+                   class="custom-swiper-slide flex w-full flex-col gap-8 border border-gray-200 px-6 md:w-[422px] md:min-w-[422px]">
+                <h3 class="font-gloock w-[260px] text-[32px]">Invest Opportunities</h3>
+                <p class="font-jakarta text-primary text-sm">
+                  Unlock lucrative real estate opportunities designed to grow your wealth and portfolio.
+                </p>
+                <button class="view-button group flex items-center justify-between gap-2 p-2">
+                  <span class="view-text transition-colors duration-300">View Details</span>
+                  <img class="arrow-icon transition-all duration-300 ease-in-out group-hover:-translate-x-2" src="../img/Vector (4).svg" alt="" />
+                </button>
+              </div>
+        
+              <!-- Card 5 -->
+              <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600"
+                   class="custom-swiper-slide flex w-full flex-col gap-8 border border-gray-200 px-6 md:w-[422px] md:min-w-[422px]">
+                <h3 class="font-gloock w-[260px] text-[32px]">Invest Opportunities</h3>
+                <p class="font-jakarta text-primary text-sm">
+                  Unlock lucrative real estate opportunities designed to grow your wealth and portfolio.
+                </p>
+                <button class="view-button group flex items-center justify-between gap-2 p-2">
+                  <span class="view-text transition-colors duration-300">View Details</span>
+                  <img class="arrow-icon transition-all duration-300 ease-in-out group-hover:-translate-x-2" src="../img/Vector (4).svg" alt="" />
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- button -->
+          <button class="btn-primary">
+            <span>Learn More</span>
+            <img src="../img/Icons (1).svg" alt="" class="iconbtn transition-transform duration-500 ease-in-out" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section insaige -->
+    <section class="container mx-auto max-w-[1440px] px-3 py-10 sm:pe-5 md:py-24 lg:pe-10">
+      <div class="w-full sm:pl-[70px] md:pl-[73px] lg:pl-[120px]">
+        <div class="flex flex-col gap-10 lg:gap-14">
+          <div data-aos="fade-right" class="lg:[1280px] flex w-full flex-col items-end justify-between lg:flex-row">
+            <h1 class="title lg:w-[710px]">Insights and Trends: Stay Updated with the Latest in Real Estate</h1>
+            <div data-aos="fade-up" class="flex gap-2">
+              
+              <!-- tombol slide -->
+              <button id="prevButton" class="swiper-button-prev border-dark rounded-full border p-2 sm:p-4 hover:bg-gray-100 active:scale-95">
+                <img src="../img/Icons (2).svg" alt="" class="" />
+              </button>
+              <button id="nextButton" class="swiper-button-next border-dark rounded-full border p-2 sm:p-4 hover:bg-gray-100 active:scale-95">
+                <img src="../img/Icons (3).svg" alt="" />
+              </button>
+            </div>
+          </div>
+
+          <div class="relative w-full overflow-hidden">
+            <div class="swiper-manual">
+                <div class="swiper-wrapper">
+                    <!-- Card 1 -->
+                    <div class="swiper-slide flex w-[316px] md:w-[572px] shrink-0 flex-col justify-between">
+                        <figure class="flex flex-col gap-4">
+                            <img src="../img/Rectangle 11.png" alt="" class="rounded-lg" />
+                            <h3 class="font-jakarta font-semibold">This is an article title, don’t expect too much on this</h3>
+                            <p class="font-jakarta text-gray-400">We are a trusted property agency connecting you with the best opportunities in the market.</p>
+                        </figure>
+                        <p class="font-afacad text-sm text-gray-400">12 November 2024</p>
+                    </div>
+    
+                    <!-- Card 2 -->
+                    <div class="swiper-slide flex w-[217px] shrink-0 flex-col justify-between gap-5">
+                        <figure class="flex flex-col gap-4">
+                            <img src="../img/Rectangle 13.svg" alt="" class="rounded-lg" />
+                            <h3 class="font-jakarta font-semibold">This is an article title, don’t expect too much on this</h3>
+                        </figure>
+                        <p class="font-afacad text-sm text-gray-400">12 November 2024</p>
+                    </div>
+    
+                    <!-- Card 3 -->
+                    <div class="swiper-slide flex w-[217px] shrink-0 flex-col justify-between gap-5">
+                        <figure class="flex flex-col gap-4">
+                            <img src="../img/Rectangle 14.svg" alt="" class="rounded-lg" />
+                            <h3 class="font-jakarta font-semibold">This is an article title, don’t expect too much on this</h3>
+                        </figure>
+                        <p class="font-afacad text-sm text-gray-400">12 November 2024</p>
+                    </div>
+    
+                    <!-- Card 4 -->
+                    <div class="swiper-slide flex w-[218px] shrink-0 flex-col justify-between gap-5">
+                        <figure class="flex flex-col gap-4">
+                            <img src="../img/Rectangle 15.svg" alt="" class="rounded-lg" />
+                            <h3 class="font-jakarta font-semibold">This is an article title, don’t expect too much on this</h3>
+                        </figure>
+                        <p class="font-afacad text-sm text-gray-400">12 November 2024</p>
+                    </div>
+
+                    <div class="swiper-slide flex w-[316px] md:w-[572px] shrink-0 flex-col justify-between">
+                      <figure class="flex flex-col gap-4">
+                          <img src="../img/Rectangle 11.png" alt="" class="rounded-lg" />
+                          <h3 class="font-jakarta font-semibold">This is an article title, don’t expect too much on this</h3>
+                          <p class="font-jakarta text-gray-400">We are a trusted property agency connecting you with the best opportunities in the market.</p>
+                      </figure>
+                      <p class="font-afacad text-sm text-gray-400">12 November 2024</p>
+                  </div>
+  
+                  <!-- Card 2 -->
+                  <div class="swiper-slide flex w-[217px] shrink-0 flex-col justify-between gap-5">
+                      <figure class="flex flex-col gap-4">
+                          <img src="../img/Rectangle 13.svg" alt="" class="rounded-lg" />
+                          <h3 class="font-jakarta font-semibold">This is an article title, don’t expect too much on this</h3>
+                      </figure>
+                      <p class="font-afacad text-sm text-gray-400">12 November 2024</p>
+                  </div>
+  
+                  <!-- Card 3 -->
+                  <div class="swiper-slide flex w-[217px] shrink-0 flex-col justify-between gap-5">
+                      <figure class="flex flex-col gap-4">
+                          <img src="../img/Rectangle 14.svg" alt="" class="rounded-lg" />
+                          <h3 class="font-jakarta font-semibold">This is an article title, don’t expect too much on this</h3>
+                      </figure>
+                      <p class="font-afacad text-sm text-gray-400">12 November 2024</p>
+                  </div>
+  
+                  <!-- Card 4 -->
+                  <div class="swiper-slide flex w-[218px] shrink-0 flex-col justify-between gap-5">
+                      <figure class="flex flex-col gap-4">
+                          <img src="../img/Rectangle 15.svg" alt="" class="rounded-lg" />
+                          <h3 class="font-jakarta font-semibold">This is an article title, don’t expect too much on this</h3>
+                      </figure>
+                      <p class="font-afacad text-sm text-gray-400">12 November 2024</p>
+                  </div>
+                </div>
+            </div>
+           
+        </div>
+          <button class="btn-primary">
+            <span>Learn More</span>
+            <img src="../img/Icons (1).svg" alt="" class="iconbtn transition-transform duration-500 ease-in-out" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- section setories -->
+    <section class="container mx-auto max-w-[1440px] px-3 py-10 md:py-24 lg:pe-10">
+      <div class="w-full sm:pl-[70px] md:pl-[73px] lg:pl-[120px]">
+        <div class="flex flex-col justify-between gap-10 md:gap-24">
+          <div class="flex flex-col items-start justify-between md:flex-row md:items-center">
+            <h1 data-aos="fade-right" class="title md:w-[552px]">Stories of Trust, Growth, and Shared Success</h1>
+
+            <!-- slider -->
+            <div data-aos="fade-right" class="mt-auto flex justify-end gap-2">
+              <button
+                id="newPrevButton"
+                class="border-dark rounded-full border p-2 transition duration-300 hover:bg-gray-300 hover:text-white active:scale-90 md:p-4">
+                <img src="../img/Icons (2).svg" alt="" />
+              </button>
+              <button
+                id="newNextButton"
+                class="border-dark rounded-full border p-2 transition duration-300 hover:bg-gray-300 hover:text-white active:scale-90 md:p-4">
+                <img src="../img/Icons (3).svg" alt="" />
+              </button>
+            </div>
+          </div>
+
+          <!-- card 1-->
+          <div id="newSlideContainer" class="scrollbar-hide flex sm:h-[434px] gap-2 overflow-x-auto md:gap-24 w-full px-1">
+            <!-- Card 1 -->
+            <div data-aos="fade-right" class="flex flex-col justify-between w-full md:w-[571px] flex-shrink-0">
+              <div class="flex flex-col gap-4 md:w-[571px]">
+                <div class="flex gap-2">
+                  <figure>
+                    <img src="../img/persoon.svg" alt="" />
+                  </figure>
+                  <div class="text-gray-400">
+                    <h3 class="font-jakarta text-dark text-2xl font-semibold">John Doe</h3>
+                    <div class="font-jakarta text-primary flex gap-2 text-sm">
+                      <p>New Jersey</p>
+                      <img src="../img/Ellipse 1 (1).svg" alt="icon" />
+                      <p>USA</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="font-gloock text-1xl leading-[120%] md:text-[32px]">
+                  Bumi made finding our dream home stress-free and enjoyable! Working with Bumi was an absolute pleasure. They understood exactly what
+                  we were looking for and went above and beyond to make the process seamless.
+                </p>
+              </div>
+              <p class="font-afacad text-primary mt-5 sm:mt-0">2024</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div data-aos="fade-left" class="flex flex-col justify-between text-gray-100 w-full md:w-[571px] flex-shrink-0">
+              <div class="flex flex-col gap-4 w-full md:w-[571px]">
+                <div class="flex gap-2">
+                  <figure>
+                    <img src="../img/persoon.svg" alt="" class="opacity-50" />
+                  </figure>
+                  <div>
+                    <h3 class="font-jakarta text-2xl font-semibold">John Doe</h3>
+                    <div class="font-jakarta flex gap-2 text-sm">
+                      <p>New Jersey</p>
+                      <img src="../img/Ellipse 1 (1).svg" alt="icon" class="opacity-50" />
+                      <p>USA</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="font-gloock text-1xl leading-[120%] text-gray-100 md:text-[32px]">
+                  Bumi made finding our dream home stress-free and enjoyable! Working with Bumi was an absolute pleasure. They understood exactly what
+                  we were looking for and went above and beyond to make the process seamless.
+                </p>
+              </div>
+              <p class="font-afacad text-primary">2024</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div data-aos="fade-left" class="flex flex-col justify-between text-gray-100 w-full md:w-[571px] flex-shrink-0">
+              <div class="flex flex-col gap-4 w-full">
+                <div class="flex gap-2">
+                  <figure>
+                    <img src="../img/persoon.svg" alt="" class="opacity-50" />
+                  </figure>
+                  <div>
+                    <h3 class="font-jakarta text-2xl font-semibold">John Doe</h3>
+                    <div class="font-jakarta flex gap-2 text-sm">
+                      <p>New Jersey</p>
+                      <img src="../img/Ellipse 1 (1).svg" alt="icon" class="opacity-50" />
+                      <p>USA</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="font-gloock text-1xl leading-[120%] text-gray-100 md:text-[32px]">
+                  Bumi made finding our dream home stress-free and enjoyable! Working with Bumi was an absolute pleasure. They understood exactly what
+                  we were looking for and went above and beyond to make the process seamless.
+                </p>
+              </div>
+              <p class="font-afacad text-primary">2024</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div data-aos="fade-left" class="flex flex-col justify-between text-gray-100 w-full md:w-[571px] flex-shrink-0">
+              <div class="flex flex-col gap-4 w-full md:w-[571px]">
+                <div class="flex gap-2">
+                  <figure>
+                    <img src="../img/persoon.svg" alt="" class="opacity-50" />
+                  </figure>
+                  <div>
+                    <h3 class="font-jakarta text-2xl font-semibold">John Doe</h3>
+                    <div class="font-jakarta flex gap-2 text-sm">
+                      <p>New Jersey</p>
+                      <img src="../img/Ellipse 1 (1).svg" alt="icon" class="opacity-50" />
+                      <p>USA</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="font-gloock text-1xl leading-[120%] text-gray-100 md:text-[32px]">
+                  Bumi made finding our dream home stress-free and enjoyable! Working with Bumi was an absolute pleasure. They understood exactly what
+                  we were looking for and went above and beyond to make the process seamless.
+                </p>
+              </div>
+              <p class="font-afacad text-primary">2024</p>
+            </div>
+          </div>
+
+          <div id="borderIndicator" class="w-[226px] border-2 border-gray-950 rounded-full"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="container mx-auto max-w-[1440px] py-10 md:py-24 lg:pe-10">
+      <div class="w-full px-1 sm:pl-[70px] md:pl-[73px] lg:pl-[120px]">
+        <div class="relative">
+          <h2 data-aos="zoom-in" class="font-gloock text-center text-5xl leading-[120%] text-Tertiary lg:text-9xl">
+            Ready to Find Your Perfect Property?
+          </h2>
+          <div
+            id="contact-btn"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            class="bg-dark absolute top-1/2 right-1/2 flex w-[190px] translate-x-24 -translate-y-7 items-center justify-center rounded-full border p-3 sm:translate-x-20 md:p-4 lg:p-6">
+            <button class="flex items-center justify-center gap-2 text-sm text-white transition-transform duration-500 active:scale-90">
+              Contact Us Now
+              <img src="img/Icons (4).svg" alt="icon" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popup -->
+    <div id="popup" class="popup-container">
+      <div class="popup-content">
+        <!-- Header -->
+        <div class="flex items-center justify-between border-b pb-2">
+          <h2 class="text-lg font-bold text-gray-800">Contact Us</h2>
+          <button id="close-btn" class="text-2xl text-gray-600 hover:text-red-500">&times;</button>
+        </div>
+
+        <!-- Content -->
+        <p class="mt-3 text-gray-700">We’d love to hear from you! Reach out with any questions or feedback.</p>
+
+        <!-- Form -->
+        <form class="mt-3">
+          <input type="text" placeholder="Your Name" class="w-full rounded-md border p-2 focus:ring-2 focus:ring-blue-400 focus:outline-none" />
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="mt-2 w-full rounded-md border p-2 focus:ring-2 focus:ring-blue-400 focus:outline-none" />
+          <textarea
+            placeholder="Your Message"
+            class="mt-2 w-full rounded-md border p-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"></textarea>
+          <button type="submit" class="mt-3 w-full rounded-md bg-blue-600 py-2 text-white transition hover:bg-blue-700">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="mx-auto max-w-[1440px] md:pb-2">
+      <div class="flex flex-col gap-10 md:gap-24">
+        <figure data-aos="fade-up" class="w-full">
+          <img src="img/imageFooter.png" alt="" />
+        </figure>
+        <div class="flex w-full flex-col-reverse justify-between gap-10 px-4 md:gap-24 lg:flex-row">
+          <div class="flex w-full flex-col items-center justify-between gap-10 md:gap-24 lg:flex-row lg:items-start">
+            <div data-aos="fade-up" class="flex h-full flex-col justify-between gap-10 md:gap-24">
+              <div class="flex justify-center gap-24 lg:justify-start">
+                <img src="img/Vector (5).svg" alt="" class="block w-[63px]" />
+              </div>
+              <div class="font-jakarta text-muted flex flex-col justify-between gap-4 text-center text-sm md:gap-6 lg:text-start">
+                <div>
+                  <p class="hover:text-dark">(406) 555-0120</p>
+                </div>
+                <div>
+                  <p class="hover:text-dark">Hello@Bumi.Com</p>
+                </div>
+                <div class="leading-[190%]">
+                  <p class="hover:text-dark">4517 Washington Ave. Manchester, Kentucky 39495</p>
+                </div>
+              </div>
+            </div>
+            <div data-aos="zoom-in" class="flex h-full flex-grow flex-col items-center">
+              <ul class="mt-auto flex gap-2 text-muted md:items-center lg:items-end">
+                <li><img src="img/Vector 31.svg" alt="" /></li>
+                <li class="hover:text-dark"><a href="">Medium</a></li>
+                <li><img src="img/Vector 31.svg" alt="" /></li>
+                <li class="hover:text-dark"><a href="">Instagram</a></li>
+                <li><img src="img/Vector 31.svg" alt="" /></li>
+                <li class="hover:text-dark"><a href="">X</a></li>
+                <li><img src="img/Vector 31.svg" alt="" /></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="">
+            <ul class="font-gloock flex h-[40] flex-col gap-6 items-center text-2xl leading-[120%] md:text-[64px] lg:text-right">
+              <li data-aos="fade-up" data-aos-delay="0" class="hover:text-dark w-fit">
+                <a href="">HOME</a>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="150">
+                <a href="" class="hover:text-dark text-Tertiary w-fit transition duration-300 ease-in-out">ABOUT</a>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="300">
+                <a href="" class="hover:text-dark text-Tertiary w-fit transition duration-300 ease-in-out">PROPERTIES</a>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="450">
+                <a href="" class="hover:text-dark text-Tertiary w-fit transition duration-300 ease-in-out">SERVICES</a>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="600">
+                <a href="" class="hover:text-dark text-Tertiary w-fit transition duration-300 ease-in-ou">RESOURCES</a>
+              </li>
+              <li data-aos="zoom in"
+              data-aos-anchor-placement="bottom-bottom" data-aos-delay="750">
+                <a href="" class="hover:text-dark text-Tertiary w-fit transition duration-300 ease-in-ou">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="src/script.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- aos -->
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+  // Inisialisasi AOS
+  AOS.init({
+    duration: 800,
+    easing: "ease-in-out",
+    once: true,
+    mirror: false,
+  });
+
+  const textElement = document.getElementById("title");
+  if (!textElement) return;
+
+  // Simpan teks asli dan sisipkan newline sebelum kata "today" dan "Perfect Home" (case-insensitive)
+  const fullText = textElement.innerHTML.trim();
+  const modifiedText = fullText
+    .replace(/today/gi, "\ntoday")
+    .replace(/Perfect Home/gi, "\nPerfect Home");
+
+  // Kosongkan konten elemen
+  textElement.innerHTML = "";
+
+  // Buat span baru untuk efek mengetik
+  const textSpan = document.createElement("span");
+  textSpan.className = "text-content";
+  textElement.appendChild(textSpan);
+
+  let index = 0;
+  let lastTimestamp = 0;
+  const delay = 80; // Delay per karakter dalam ms
+
+  function typeEffect(timestamp) {
+    if (!lastTimestamp) lastTimestamp = timestamp;
+    const progress = timestamp - lastTimestamp;
+    if (progress >= delay && index < modifiedText.length) {
+      if (modifiedText[index] === "\n") {
+        textSpan.innerHTML += "<br>";
+      } else {
+        textSpan.innerHTML += modifiedText[index];
+      }
+      index++;
+      lastTimestamp = timestamp;
+    }
+    if (index < modifiedText.length) {
+      requestAnimationFrame(typeEffect);
+    } else {
+      addShimmerEffect();
+      if (typeof AOS !== "undefined" && AOS.refresh) {
+        AOS.refresh();
+      }
+    }
+  }
+
+  function addShimmerEffect() {
+    textSpan.classList.add("shimmer-effect");
+    setTimeout(() => {
+      textSpan.classList.remove("shimmer-effect");
+    }, 1500);
+  }
+
+  // Mulai efek mengetik setelah delay 500ms
+  setTimeout(() => {
+    requestAnimationFrame(typeEffect);
+  }, 500);
+});
+
+ </script>
+</html>
